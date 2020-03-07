@@ -1,0 +1,34 @@
+- const nav = [
+-   { name: 'Обучение', url: 'learning.html' },
+-   { name: 'О Lingua Guru', url: 'about.html' },
+-   { name: 'Контакты', url: 'contacts.html' }
+- ]
+
+header.top
+    .container
+        .top__row.row.justify-content-between.align-items-center
+            .top__left.col.col-sm.d-flex.align-items-center
+                a.top__logo(src="#")
+                    +img('img/logo','png', 'Learning Guru')
+
+                .top__nav
+                    #st-trigger-effects.top__hamb
+                        button(data-effect="st-effect-1")
+                            i.icon.icon-hamb
+                    ul.nav
+                        each navItem in nav
+                            li
+                                a(href=navItem.url)= navItem.name
+            .top__right.col-auto.col-sm-auto
+                .top__phone
+                    a.phone(href="tel: 88129200914") 8 (812) 9200-914
+                    div
+                        a.btn.btn--round.fbox.ttu(href="#callback-popup-form", data-fancybox) Заказать звонок
+                .top__rightbox
+                    a.top__search(href="#")
+                        i.icon.icon-search
+                    a.top__user(href="#")
+                        i.icon.icon-user
+                    a.top__cart(href="#")
+                        i.icon.icon-cart
+                        span 0

@@ -1,0 +1,43 @@
+@mixin br($rad) {
+  -webkit-border-radius: $rad;
+  -moz-border-radius: $rad;
+  border-radius: $rad;
+}
+
+@mixin transition($what: all, $when: 0.25s, $how: ease) {
+  -webkit-transition: $what $when $how;
+  -moz-transition: $what $when $how;
+  -o-transition: $what $when $how;
+  transition: $what $when $how;
+}
+
+@mixin imgRetina($image, $extension) {
+  background-image: url($image + '.' + $extension);
+
+  @media
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (   min--moz-device-pixel-ratio: 2),
+  screen and (     -o-min-device-pixel-ratio: 2/1),
+  screen and (        min-device-pixel-ratio: 2),
+  screen and (             min-resolution: 192dpi),
+  screen and (             min-resolution: 2dppx) {
+    background-image: url($image + '@2x' + '.' + $extension);
+  }
+}
+
+// px to rem
+@function rem($pixels, $context: $mainFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1rem;
+}
+
+@mixin inlineCenter() {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}

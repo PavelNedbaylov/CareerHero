@@ -1,0 +1,61 @@
+include ../utils/mixins
+block variables
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title #{title}
+    meta(name="description", content=description)
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name="format-detection" content="telephone=no")
+    link(href="favicon.ico" rel="shortcut icon" type="image/x-icon")
+    link(href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet")
+
+    block head
+
+  body(class=pageClass)
+    #st-container.st-container
+      include ../includes/sidebar
+      .st-pusher
+        include ../includes/header
+        include ../includes/main
+        include ../includes/cards
+
+        section.section.oh
+          .container
+            .row.align-items-center
+              .col-lg-5
+                h2.section-title Выбирайте курс <br />по отзывам
+                p Студенты делятся с нами отзывами о поездках, а мы публикуем все на сайте.
+                  | Из отзывов студентов составляем рейтинг языковых школ. В нем учитываем расположение, проживание, курсы и досуг.
+
+                h2.section-title Бронируйте с выгодой
+                p У нас нет комиссий и дополнительных сборов. Зато
+                  | есть скидки от школ — до 30% на языковые курсы.
+                  | Чтобы забронировать курс, не нужно никуда ехать
+                  | или звонить. Все можно сделать на сайте.
+
+              .reviews.col-lg-7
+                .reviews__bg
+                  include ../includes/reviews
+
+        section.section
+          .container
+            .row.gutter-45
+              .sectionVideo.col-lg-5.col-xl-7.order-1.order-lg-0
+                a(href="#video" data-fancybox)
+                  img(src="img/youtube.jpg")
+
+              .col-lg-7.col-xl-5
+                h2.section-title Как мы работаем
+                p Мы работаем онлайн: консультируем по визовым вопросам и помогаем на всех этапах после бронирования. Ваши данные не передаем третьим лицам и тщательно шифруем.
+
+                h2.section-title Отвечаем на вопросы
+                p Если планируете поездку, прочитайте наш гид по образованию и курсам за рубежом. Если останутся вопросы, свяжитесь с нами.
+
+                p: a.btn.btn--round.fbox(href="#") Связаться с нами
+
+        include ../includes/footer
+
+    block script

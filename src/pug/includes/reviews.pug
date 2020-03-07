@@ -1,0 +1,33 @@
+-
+    var reviews = [
+        {
+            avatar: "img/avatar.png",
+            city: "Санкт Петербург",
+            name: "Анастасия Куртонина",
+            text: "<p>Посещаю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки, к тому же проводятся очень много игр, с которыми материал усваивается быстрее!</p><p>Всегда идут навстречу, если вдруг не подходят какие-то дни занятий или по другим организационным вопросам....</p>"
+        },{
+            avatar: "img/avatar.png",
+            city: "Москва",
+            name: "Маруся Климова",
+            text: "<p>Посещаю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки, к тому же проводятся очень много игр, с которыми материал усваивается быстрее!</p><p>Всегда идут навстречу, если вдруг не подходят какие-то дни занятий или по другим организационным вопросам....</p>"
+        },
+    ]
+
+.reviews-carousel.owl-carousel
+    each item in reviews
+        .review
+            .review__header
+                .review__avatar
+                    img(src=item.avatar)
+                div
+                    span.review__city= item.city
+                    span.review__name= item.name
+            .review__stars
+                i.icon.icon-star.color
+                i.icon.icon-star.color
+                i.icon.icon-star.color
+                i.icon.icon-star
+                i.icon.icon-star
+            .review__text !{item.text}
+                |
+                p: a.review__more.btn.btn--round.btn--dashed(href="#") Отзыв полностью

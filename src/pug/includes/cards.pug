@@ -1,0 +1,55 @@
+-
+    var cards = [
+        {
+            country: "Швеция",
+            img: "img/cards/sweden.jpg",
+            place: "Круизный лайнер «Princess»",
+            vacancy: "Официант",
+            zp: "Зарплата 100 000$ в год",
+            cost: "Стоимость от 42 000₽"
+        },{
+            country: "Мальта",
+            img: "img/cards/malta.jpg",
+            place: "Гостиница Blue Lagoon",
+            vacancy: "Помощник администратора",
+            zp: "Зарплата 100 000$ в год",
+            cost: "Стоимость от 42 000₽"
+        },{
+            country: "Италия",
+            img: "img/cards/italy.jpg",
+            vacancy: "Гид",
+            zp: "Зарплата 100 000$ в год",
+            cost: "Стоимость от 42 000₽"
+        },{
+            country: "Рим",
+            img: "img/cards/rome.jpg",
+            vacancy: "Гид",
+            zp: "Зарплата 150 000$ в год",
+            cost: "Стоимость от 87 000₽"
+        }
+    ]
+section.cards.section
+    .container
+        .examples
+            span.examples__title Пример, я хочу:
+            a.example(href="#") Стажироваться
+            a.example(href="#") Любая страна
+            a.example(href="#") Туризм
+            a.example(href="#") Английский язык
+
+        .cards__row.row
+            each item in cards
+                .card.col-md-6.col-lg-4.col-xxl-3
+                    img.card__img(src=item.img)
+                    .card__bg(style="background-image: url(" + item.img + ")")
+                        a.card__wrap(href="#")
+                            .card__country
+                                i.icon.icon-world
+                                strong= item.country
+                            if item.place
+                                span.card__place= item.place
+                            if item.vacancy
+                                span.card__vacancy= item.vacancy
+                            .card__footer
+                                p: strong= item.zp
+                                p= item.cost

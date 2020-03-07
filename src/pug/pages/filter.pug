@@ -1,0 +1,98 @@
+extends ../layout/inner
+
+block variables
+    - var title = 'Поиск';
+    - var description = 'Поиск подходящих школ';
+
+block middle
+    .row
+        include ../includes/side
+
+        .content.col-lg-8.col-xl-9
+            p.content__title По вашему запросу найдено - 983 варианта
+
+            .items
+                .item
+                    .item__wrap.row
+                        .item__imgwrap.col-lg-auto
+                            .item__img(style="background-image: url(img/item1.jpg)")
+
+                        .item__desc.col-lg
+                            .item__header
+                                h2.item__title Название элемента
+                                span.item__last Осталось 3 места
+                            ul.item__list
+                                li Тип: <strong>Работа</strong>
+                                li Страна: <strong>Япония</strong>
+                                li Язык: <strong>Японский</strong>
+                            .item__text
+                                p Посещаю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...
+                            .item__footer
+                                .item__tags
+                                    .item__tag.blue
+                                        i.icon.icon-airplane
+                                        span Перелет включен
+                                    .item__tag.green
+                                        i.icon.icon-bed
+                                        span Проживание включено
+                                .item__cost
+                                    span Зарплата 100 000$ в год
+                                    a.btn.btn--round(href="#") Посмотреть подробнее
+
+                .item
+                    .item__wrap.row
+                        .item__imgwrap.col-lg-auto
+                            .item__img(style="background-image: url(img/item2.jpg)")
+
+                        .item__desc.col-lg
+                            .item__header
+                                h2.item__title Название элемента
+                                span.item__last Осталось 3 места
+                            ul.item__list
+                                li Тип: <strong>Высшее образование</strong>
+                                li Сфера образования: <strong>Программирование</strong>
+                                li Страна: <strong>Великобритания</strong>
+                                li Язык: <strong>Английский</strong>
+                            .item__text
+                                p Посещаю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...
+                            .item__footer
+                                .item__tags
+                                    .item__tag.blue
+                                        i.icon.icon-airplane
+                                        span Перелет включен
+                                    .item__tag.green
+                                        i.icon.icon-bed
+                                        span Проживание включено
+                                .item__cost
+                                    span Зарплата 100 000$ в год
+                                    a.btn.btn--round(href="#") Посмотреть подробнее
+
+                .item
+                    .item__wrap.row
+                        .item__imgwrap.col-lg-auto
+                            .item__img(style="background-image: url(img/item1.jpg)")
+
+                        .item__desc.col-lg
+                            .item__header
+                                h2.item__title Название элемента
+                                span.item__last Осталось 3 места
+                            ul.item__list
+                                li Тип: <strong>Высшее образование</strong>
+                                li Сфера образования: <strong>Программирование</strong>
+                                li Страна: <strong>Великобритания</strong>
+                                li Язык: <strong>Английский</strong>
+                            .item__text
+                                p Посещаю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...
+                            .item__footer
+                                .item__tags
+                                    .item__tag.blue
+                                        i.icon.icon-airplane
+                                        span Перелет включен
+                                    .item__tag.green
+                                        i.icon.icon-bed
+                                        span Проживание включено
+                                .item__cost
+                                    span Зарплата 100 000$ в год
+                                    a.btn.btn--round(href="#") Посмотреть подробнее
+
+            a.content__more.btn.btn--big.btn--square.btn--transparent(href="#") Показать еще

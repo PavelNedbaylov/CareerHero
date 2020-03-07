@@ -1,0 +1,7 @@
+mixin item(title, descr)
+  .item
+    h2.item-title= title
+    p.item-descr= descr
+
+mixin img(name, ext, alt)
+  img(srcset=`${name}.${ext} 1x, ${name}@2x.${ext} 1.5x, ${name}@2x.${ext} 2x`, src=`${name}.${ext}`, alt=`${alt}`)

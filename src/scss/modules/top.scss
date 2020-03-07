@@ -1,0 +1,187 @@
+.top {
+  padding: 16px 0;
+  border-bottom: 2px solid $primary-color;
+  margin-bottom: 35px;
+
+  &__left {
+    flex-shrink: 0;
+  }
+
+  &__logo {
+    margin-right: 60px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__hamb {
+    margin-right: 30px;
+    color: #000;
+
+    button {
+      background: none;
+      border: none;
+      font-size: 50px;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+
+  &__phone {
+    text-align: center;
+    margin-right: 48px;
+
+    .phone {
+      text-decoration: none;
+      color: #000;
+      font-weight: 700;
+      font-size: 24px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__rightbox {
+    width: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      font-size: 24px;
+      color: #000;
+
+      &:hover {
+        color: $primary-color;
+      }
+
+      .icon {
+        line-height: 1;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &__cart {
+    color: #fff;
+
+    span {
+      background: $primary-color;
+      color: #fff;
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      line-height: 24px;
+      font-size: 14px;
+      font-weight: 600;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 4px;
+      @include br(50%);
+    }
+    
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    .container {
+      max-width: 1576px;
+    }
+  }
+
+  @include media-breakpoint-only('xl') {
+
+    &__logo {
+      margin-right: 20px;
+      max-width: 150px;
+    }
+
+    &__hamb {
+      margin-right: 10px;
+
+      button {
+        font-size: 40px;
+      }
+    }
+
+    &__phone {
+      margin-right: 35px;
+    }
+
+    &__rightbox {
+      width: 160px;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+
+    &__logo {
+      order: 1;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+
+    &__phone {
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+
+    &__row {
+      flex-wrap: nowrap;
+    }
+
+    &__logo {
+      margin: 0;
+    }
+
+    &__hamb {
+      margin-right: 15px;
+
+      button {
+        font-size: 30px;
+      }
+    }
+
+    &__rightbox {
+      width: 140px;
+    }
+  }
+}
+
+.nav {
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  display: flex;
+
+  li {
+    padding: 0 15px;
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: #000;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}

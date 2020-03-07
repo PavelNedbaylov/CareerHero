@@ -1,0 +1,92 @@
+@import "utils/vars";
+@import "utils/libs";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/reset";
+@import "utils/helpers";
+
+@import "modules/sidebar-effects";
+
+html {
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  height: 100%;
+  @include media-breakpoint-down('xl') {
+    font-size: 14px;
+  }
+  @include media-breakpoint-down('lg') {
+    font-size: 13px;
+  }
+  @include media-breakpoint-down('md') {
+    font-size: 12px;
+  }
+  @include media-breakpoint-down('sm') {
+    font-size: 10px;
+  }
+  @include media-breakpoint-down('xs') {
+    font-size: 9px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.home {
+
+    .top {
+      border: none;
+      margin-bottom: 0;
+    }
+
+    .footer {
+      margin-top: 0;
+    }
+  }
+}
+
+a {
+  color: $primary-color;
+}
+
+
+.section {
+  margin-bottom: 85px;
+
+  &-title {
+    font-weight: 400;
+    font-size: rem(36);
+    line-height: 1.2;
+    margin: 0.83em 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 45px;
+  }
+
+  @include media-breakpoint-down(md) {
+
+    &Video {
+      margin-top: 2em;
+    }
+  }
+}
+
+// Modules
+@import "modules/top";
+@import "modules/main";
+@import "modules/cards";
+@import "modules/reviews";
+@import "modules/footer";
+@import "modules/content";
+@import "modules/side";

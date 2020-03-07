@@ -1,0 +1,124 @@
+.card {
+  color: #fdfdfd;
+  margin-bottom: 30px;
+
+  &s {
+
+  }
+
+  &__img {
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    padding: 15px 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fdfdfd;
+    text-decoration: none;
+  }
+
+  &__bg {
+    height: 100%;
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border: 4px solid #fff;
+    @include br(4px);
+    @include transition();
+
+    &:hover {
+      border-color: $primary-color;
+      box-shadow: 0 0 28px 0 rgba(0,0,0,.35);
+    }
+  }
+
+  &__country {
+    line-height: 1.2;
+
+    .icon {
+      color: #f5d448;
+      font-size: 15px;
+      margin-right: 3px;
+    }
+  }
+
+  &__vacancy {
+    display: inline-block;
+    background: $primary-color;
+    color: #fff;
+    padding: 3px 12px;
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  &__footer {
+    font-size: 14px;
+    margin-top: auto;
+
+    strong {
+      font-size: 16px;
+    }
+
+    p {
+      display: block;
+      margin: 0;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    &s {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.example {
+  line-height: 1;
+  white-space: nowrap;
+  display: block;
+  padding: 14px 22px;
+  color: $primary-color;
+  margin-right: 11px;
+  margin-bottom: 11px;
+  border: dashed 1px #e6e6e6;
+  background-color: #fffbfa;
+  text-decoration: none;
+  @include br(23px);
+  @include transition();
+
+  &:hover {
+    background: $primary-color;
+    color: #fff;
+    border-style: solid;
+  }
+
+  &s {
+    padding: 50px 0 45px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    &__title {
+      font-size: 18px;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-right: 28px;
+      margin-bottom: 11px;
+      align-self: center;
+    }
+  }
+}

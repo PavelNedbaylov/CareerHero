@@ -1,0 +1,56 @@
+section.main
+    .container
+        .main__wrap
+            h1.main__title Образование, работа <br />и стажировка за рубежом
+
+            form.nextgen
+                .nextgen__body
+                    .nextgen__step.current(data-step="1")
+                        span.nextgen__caption Я хочу:
+                        .nextgen__box
+                            .nextgen__radios.radiostyle-group
+                                input#iwant1(type="radio",name="iwant",value="1")
+                                label(for="iwant1"): span Учиться
+
+                                input#iwant2(type="radio",name="iwant",value="2")
+                                label(for="iwant2"): span Работать
+
+                                input#iwant3(type="radio",name="iwant",value="3")
+                                label(for="iwant3"): span Стажироваться
+
+                                input#iwant4(type="radio",name="iwant",value="4")
+                                label(for="iwant4"): span Не знаю
+
+                    .nextgen__step(data-step="2")
+                        span.nextgen__caption Пол:
+                        .nextgen__box
+                            .nextgen__radios.radiostyle-group
+                                input#sex1(type="radio",name="sex",value="1")
+                                label(for="sex1"): span Мужской
+
+                                input#sex2(type="radio",name="sex",value="2")
+                                label(for="sex2"): span Женский
+
+                            .nextgen__back
+                                i.icon.icon-arrow-left-bold
+                                span Шаг <br />назад
+
+                    button.nextgen__btn.btn.btn--square(type="submit")
+                        strong Показать
+                        |
+                        |
+                        span 4231
+
+            .main__eggs.row
+                mixin mEgg(icon, title)
+                    .main__egg.col-lg-3.col-md-6
+                        .main__egg-icon
+                            i(class="icon icon-" + icon)= name
+                        .main__egg-caption
+                            span= title
+
+
+                +mEgg('book', 'Более 2500 языковых курсов по всему миру')
+                +mEgg('file', 'Помощь с визой и личный менеджер')
+                +mEgg('graph', 'Цены ниже, чем напрямую в школах')
+                +mEgg('wallet', 'Возврат денег при отказе в визе')
