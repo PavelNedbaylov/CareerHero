@@ -1,0 +1,34 @@
+.popovers {
+    margin-top: 15px;
+    .popover {
+        &__text {
+            display: inline-block;
+            position: relative;
+            color: #67d6aa;
+            font-weight: bold;
+            margin-top: 8px;
+            max-width: 90%;
+        }
+        &__icon {
+            position: absolute;
+            right: -21px;
+            top: 4px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-left: 5px;
+            background: #c9c9c9;
+            line-height: 16px;
+            text-align: center;
+            font-style: normal;
+            color: #fff;
+            font-weight: normal;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color .2s ease;
+            &:hover {
+                background-color: #ef4900;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.mainItemInfo{
+    border: solid 1px #e6e6e6;
+    padding: 20px;
+    font-size: 20px;
+    &.graybox {
+        background-color: #f8f8f8;
+    }
+    p {
+      margin: 0;
+    }
+  
+    .color {
+      color: $primary-color;
+    }
+  
+    strong {
+      font-weight: 600;
+    }
+  
+    @include media-breakpoint-down(sm) {
+      font-size: rem(28);
+    }
+  }
+
+  

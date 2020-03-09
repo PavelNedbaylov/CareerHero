@@ -1,0 +1,20 @@
+- 
+    var popovers = [
+        {
+            text: "Уровень языка intermediate"
+        },
+        {
+            text: "PHP-специалист"
+        },
+        {
+            text: "G-MAT"
+        },
+        {
+            text: "VMware-специалист"
+        }
+    ]
+.popovers
+    each item in popovers
+        .popover
+            p.popover__text= item.text
+                i.popover__icon ?

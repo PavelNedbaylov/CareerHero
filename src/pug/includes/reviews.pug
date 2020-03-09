@@ -22,12 +22,7 @@
                 div
                     span.review__city= item.city
                     span.review__name= item.name
-            .review__stars
-                i.icon.icon-star.color
-                i.icon.icon-star.color
-                i.icon.icon-star.color
-                i.icon.icon-star
-                i.icon.icon-star
+            include ./stars
             .review__text !{item.text}
                 |
                 p: a.review__more.btn.btn--round.btn--dashed(href="#") Отзыв полностью

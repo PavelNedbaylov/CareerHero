@@ -1,0 +1,86 @@
+form.orederForm
+    .orederForm__delete
+        i.orederForm__delete__icon
+        p.orederForm__delete__text Удалить
+    .orederForm__block
+        label.orederForm__label 
+            p.orederForm__text ФИО
+            input.orederForm__input(type="text" name="")
+    .orederForm__block
+        label.orederForm__label
+            p.orederForm__text Дата рождения
+            .form-group--date
+                input.orederForm__input.datepicker(type="text" name="")
+                i.icon.icon-calendar
+    .orederForm__block
+        label.orederForm__label
+            p.orederForm__text Пол
+            input.orederForm__input(type="text" name="")
+    .orederForm__block
+        label.orederForm__label
+            p.orederForm__text Гражданство
+            input.orederForm__input(type="text" name="")
+    .orederForm__block
+        label.orederForm__label
+            p.orederForm__text Загран паспорт
+            .orederForm__wrapper
+                input.orederForm__input(type="text" name="")
+                .form-group--date
+                    input.orederForm__input.datepicker(type="text" placeholder="10/10/1990" name="")
+                    i.icon.icon-calendar
+        .orederForm__info
+            p.orederForm__info__hint Номер загран. паспорта, срок действия
+            p.orederForm__info__error Ошибка ввода
+    .orederForm__block
+        label.orederForm__label
+            p.orederForm__text Уровень образования
+            select.orederForm__select.select-style(name="")
+                option Среднее специальное
+                option Высшее
+                option ...
+        .orederForm__block.orederForm__block-inner
+            label.orederForm__label.orederForm__label-inner
+                p.orederForm__text Специальность
+                input.orederForm__input.orederForm__input-inner(type="text" name="")
+        .orederForm__block.orederForm__block-inner
+            label.orederForm__label.orederForm__label-inner
+                p.orederForm__text Учебное <br/>заведение
+                input.orederForm__input.orederForm__input-inner(type="text" name="")
+        .orederForm__block.orederForm__block-inner
+            label.orederForm__label.orederForm__label-inner
+                p.orederForm__text Годы <br/>обучения
+                .orederForm__wrapper.orederForm__wrapper-inner
+                    .form-group--date
+                        input.orederForm__input.datepicker(type="text" placeholder="1990" name="")
+                        i.icon.icon-calendar
+                    .form-group--date
+                        input.orederForm__input.datepicker(type="text" placeholder="1990" name="")
+                        i.icon.icon-calendar
+
+    .orederForm__block
+        label.orederForm__label
+            p.orederForm__text Уровень языка
+            select.orederForm__select.select-style(name="")
+                option ...
+                option ...
+                option ...
+    .orederForm__block
+        label.orederForm__label
+            p.orederForm__text Опыт работы <br/>
+                span (сфера, должность)
+            input.orederForm__input(type="text" name="")
+    .orederForm__block
+        label.orederForm__label
+            p.orederForm__text Наличие сертификатов
+            input.orederForm__input(type="text" name="")
+    .orederForm__block
+        label.orederForm__label
+            p.orederForm__text Желаемая сфера
+            input.orederForm__input(type="text" name="")
+    .orederForm__block
+        label.orederForm__label
+            p.orederForm__text Тип работы
+            select.orederForm__select.select-style(name="")
+                option ...
+                option ...
+                option ...
