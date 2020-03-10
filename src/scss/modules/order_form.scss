@@ -1,4 +1,4 @@
-.orederForm {
+.orderForm {
     padding-right: 171px;
     position: relative;
 
@@ -96,37 +96,58 @@
         justify-content: space-between;
         width: 440px;
 
-        .orederForm__input {
+        .orderForm__input {
             width: 210px;
         }
 
         &-inner {
             width: 284px;
 
-            .orederForm__input {
+            .orderForm__input {
                 width: 126px;
             }
         }
     }
 
-    &__delete {
-        position: absolute;
-        right: 13px;
-        top: 5px;
+    &__nav {
         display: flex;
         align-items: center;
         cursor: pointer;
+        &-delete {
+            position: absolute;
+            right: 13px;
+            top: 5px;
+        }
+        &-add {
+            justify-content: flex-end;
+            margin-top: 23px;
+            margin-right: 7px;
+        }
         &__icon {
             width: 35px;
             height: 35px;
-            background-image: url('../../img/delete-form.png');
             margin-right: 10px;
+            &-delete {
+                background-image: url('../../img/delete-form.png');
+            }
+            &-add {
+                background-image: url('../../img/add-form.png');
+            }
         }
-
         &__text {
             margin: 0;
             font-size: 14px;
             font-weight: 500;
+        }
+    }
+    &__submit {
+        width: 244px;
+    }
+    &__wrapper__submit {
+        text-align: center;
+        margin-top: 25px;
+        &.margin-bottom {
+            margin-bottom: 57px;
         }
     }
 }

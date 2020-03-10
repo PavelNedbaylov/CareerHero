@@ -1,66 +1,36 @@
-.side__toggle
-    i.icon.icon-filter
-
-.side.col-lg-4.col-xl-4
-    .side__wrap
-        span.side__title Я хочу
-        form
-            .form-group: select.select-style.form-control
-                option Учиться
-                option Работать
-                option Стажироваться
-                option Не знаю
-
-            .form-group: select.select-style.form-control
-                option Пол
-                option Мужской
-                option Женский
-
-            .form-group: select.select-style.form-control
-                option Страна
-                option Россия
-                option Казахстан
-
-            .form-group.form-group--hor.d-flex.align-items-center
-                span.form-hcap Возраст:
-                div(style="max-width: 60px;"): input.form-control(type="text" placeholder="лет")
-
-            .form-group: select.select-style.form-control
-                option Язык
-                option Английский
-                option Французский
-
-            .form-group: select.select-style.form-control
-                option Образование
-                option Высшее
-                option Средне-специальное
-
-            .form-group
-                label.form-label Как вы давно закончили обучение
-                .radio-style
-                    input(type="radio" name="radio" value="1" id="radio_1")
-                    label(for="radio_1"): span Менее трёх лет назад
-                .radio-style
-                    input(type="radio" name="radio" value="2" id="radio_2")
-                    label(for="radio_2"): span Более трёх лет назад
-
-            .form-group: select.select-style.form-control
-                option Сфера
-                option Программирование
-                option Языки
-
-            .form-group: select.select-style.form-control
-                option Опыт работы
-                option Менее 5 лет
-                option Более 5 лет
-
-            .form-group.form-group--date
-                input.form-control.datepicker(type="text" placeholder="Дата")
-                i.icon.icon-calendar
-
-            .form-group: select.select-style.form-control
-                option Продолжительность
-                option 3 месяца
-                option 1 год
-
-            button.side__submit.btn.btn--square.btn--big(type="submit") Показать
+.side__docs.col-lg-4.col-xl-4
+    .side__docs__wrap.bg-gray
+        .side__docs__img__wrap
+            img.side__docs__img.side__docs__img__printer(src="../../img/printer.svg")
+        span.side__docs__title Документы для печати
+        .side__docs__text 
+           p Билеты, ваучеры и прочие документы появляются здесь по мере готовности.
+           p Срок выписки документов зависит от компании-туроператора, но, как правило, документы становятся доступны не позднее 24 часов до вылета.
+           p Когда полный комплект документов будет сформирован, мы оповести вас по SMS и электронной почте  
+    .side__docs__wrap.bg-gray
+        .side__docs__title Документы для печати
+        .side__docs__doc__wrap
+            .side__docs__doc 
+                img(src="../../img/pdf.svg")
+                a Название_документа.pdf  
+            .side__docs__doc 
+                img(src="../../img/pdf.svg")
+                a Название_документа.pdf 
+    .side__docs__wrap.bg-gray
+        .side__docs__title Мои документы
+        .side__docs__doc__wrap
+            span.side__docs__doc__title Михаил Андреевич Онопко
+            .side__docs__doc 
+                img(src="../../img/pdf.svg")
+                a Название_документа.pdf  
+            .side__docs__doc 
+                img(src="../../img/pdf.svg")
+                a Название_документа.pdf 
+        .side__docs__doc__wrap
+            span.side__docs__doc__title Михаил Андреевич Онопко
+            .side__docs__doc 
+                img(src="../../img/pdf.svg")
+                a Название_документа.pdf  
+            .side__docs__doc 
+                img(src="../../img/pdf.svg")
+                a Название_документа.pdf 

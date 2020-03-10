@@ -51,7 +51,15 @@ block middle
                     include ../includes/progress
                 .content__wrapper.bg-gray.border-bt-orange.margin-top-sm.padding-sides-lg
                     h2 Пожалуйста, заполните анкету для продолжения оформления заявки
-                    include ../includes/order_form   
+                    include ../includes/order_form 
+                .orderForm__nav.orderForm__nav-add
+                    i.orderForm__nav__icon.orderForm__nav__icon-add
+                    p.orderForm__nav__text Добавить ещё<br/> одного человека 
+                .orderForm__wrapper__submit.margin-bottom
+                    button.orderForm__submit.btn.btn--square.btn--big(type="submit") Отправить анкету
+                .content__wrapper.bg-gray.padding-sides-lg
+                    h2 Комментарии менеджера
+                    include ../includes/manager_comments
 
 
         include ../includes/side_docs
