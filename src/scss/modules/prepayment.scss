@@ -1,0 +1,39 @@
+.prepayment {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+    &__info {
+        display: flex;
+        &__item {
+            margin-right: 46px;
+            &::last-child{
+                margin-right: 0;
+            }
+            &__title {
+                color: #b2b2b2;
+                font-size: 14px;
+                margin-bottom: 0;
+            }
+            &__amount {
+                font-size: 18px;
+                font-weight: bold;
+                margin-top: 16px;
+                &--price{
+                    color: #000;
+                }
+                &--payment{
+                    color: #01ad4e;
+                }
+                &--debt{
+                    color: #ff0000;
+                }
+            }
+        }
+    }
+    &__btn {
+        width: auto;
+        height: auto;
+        padding: 10px 73px;
+    }
+}

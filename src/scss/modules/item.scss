@@ -9,6 +9,15 @@
 
     &-bordered {
         border: 1px solid #e6e6e6;
+        outline: solid 4px transparent;
+    }
+    &-hover-green {
+        cursor: pointer;
+        transition: .2s ease;
+        &:hover {
+          border-color: transparent;
+          outline-color: #67d6aa;
+        }
     }
   
     &s {

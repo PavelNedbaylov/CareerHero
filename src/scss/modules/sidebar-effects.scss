@@ -76,6 +76,12 @@
       -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
       transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
     }
+
+    &-inner {
+      .top {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &-container {

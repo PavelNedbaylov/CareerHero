@@ -1,0 +1,23 @@
+.purchaserData{
+    &__items {
+        display: flex;
+        margin-bottom: 12px;
+    }
+    &__item {
+        min-width: 220px;
+        &__name {
+            color: #b2b2b2;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        &__data {
+            margin-top: 0;
+        }
+    }
+    &__text {
+        margin-top: 0;
+        background-color: $green-color;
+        color: #fff;
+        padding: 19px 36px;
+    }
+}

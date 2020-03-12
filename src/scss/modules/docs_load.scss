@@ -1,0 +1,90 @@
+.docsLoad {
+    text-align: center;
+    &__item {
+        border: solid 2px #ef4900;
+        padding: 17px 0;
+        margin-bottom: 20px;
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 16px;
+        text-align-last: left;
+    }
+    &__line {
+        border-bottom: solid 2px #e6e6e6;
+        padding: 13px 29px 13px 24px;
+        display: flex;
+        align-items: start;
+        &:last-child {
+            border: none;
+            padding-bottom: 0;
+        }
+        &__title {
+            text-align: right;
+            margin: 0 31px 0 0;
+            width: 285px;
+            line-height: 20px;
+        }
+        &__doc {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            text-align: left;
+            &__el {
+                line-height: 0;
+                .icon {
+                    margin-right: 13px;
+                }
+            }
+            &__load {
+                margin-right: 12px;
+                min-width: 156px;
+                &__link {
+                    font-size: 14px;
+                    text-decoration: none;
+                    line-height: 17px;
+                    height: auto;
+                    line-height: auto;
+                    cursor: pointer;
+                    &-dp {
+                        color: #67d6aa;
+                        border-bottom: 1px solid #67d6aa;
+                    }
+                    &-bp {
+                        color: $primary-color;
+                        border-bottom: 1px solid $primary-color;
+                    }
+                }
+                &__btn {
+                    padding-right: 23px;
+                    padding-left: 23px;
+                }
+            }
+            .buttonAddRemove {
+                margin: 0;
+                &__icon {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 8px;
+                }
+            }
+            &__nf {
+                font-size: 12px;
+                color: rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+    &__instr {
+        text-align: center;
+        margin: auto;
+
+        max-width: 580px;
+    }
+    &__btn {
+        margin-top: 17px;
+        margin-bottom: 18px;
+        font-weight: 500;
+        padding: 8px 21px;
+    }
+}

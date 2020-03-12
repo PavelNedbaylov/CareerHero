@@ -1,7 +1,7 @@
 extends ../layout/inner
 
 block variables
-    - var title = 'Поиск';
+    - var title = 'Заказ';
     - var description = 'Поиск подходящих школ';
 
 block middle
@@ -49,17 +49,89 @@ block middle
                 .content__wrapper.bg-gray.margin-top-md.padding-sides-lg
                     h2 Заполнение анкеты
                     include ../includes/progress
+
+                .content__wrapper.bg-gray.margin-top-sm.padding-sides-lg
+                    .includes
+                        i.icon.icon__taxi
+                        p.includes__text #[span.txt--green Трансфер включен:] #[span.txt--blue 05.09 Аэропорт — Отель] и #[span.txt--purple 20.09 Отель —  Аэропорт]
+                .content__wrapper.bg-gray.margin-top-sm.padding-sides-lg
+                    .includes
+                        i.icon.icon__medical 
+                        p.includes__text Медицинская туристическая страховка на все время поездки #[span.txt--green включена]
+
+                .content__wrapper.bg-gray.margin-top-sm.padding-sides-lg
+                    h2 Данные покупателя
+                    .purchaserData
+                        .purchaserData__items
+                            .purchaserData__item
+                                p.purchaserData__item__name Имя
+                                p.purchaserData__item__data Вячеслав
+                            .purchaserData__item
+                                p.purchaserData__item__name Фамилия
+                                p.purchaserData__item__data Пушкин
+                            .purchaserData__item
+                                p.purchaserData__item__name Телефон
+                                p.purchaserData__item__data + 7 (987) 123-12-12
+                            .purchaserData__item
+                                p.purchaserData__item__name E-mail
+                                p.purchaserData__item__data mail@mail.ru
+                p.purchaserData__text Информация по данному заказу передается указанному здесь лицу
+
                 .content__wrapper.bg-gray.border-bt-orange.margin-top-sm.padding-sides-lg
                     h2 Пожалуйста, заполните анкету для продолжения оформления заявки
                     include ../includes/order_form 
-                .orderForm__nav.orderForm__nav-add
-                    i.orderForm__nav__icon.orderForm__nav__icon-add
-                    p.orderForm__nav__text Добавить ещё<br/> одного человека 
+                .buttonAddRemove.buttonAddRemove-add
+                    i.buttonAddRemove__icon.buttonAddRemove__icon-add
+                    p.buttonAddRemove__text Добавить ещё<br/> одного человека 
+                    
                 .orderForm__wrapper__submit.margin-bottom
                     button.orderForm__submit.btn.btn--square.btn--big(type="submit") Отправить анкету
                 .content__wrapper.bg-gray.padding-sides-lg
                     h2 Комментарии менеджера
                     include ../includes/manager_comments
+                .content__wrapper.bg-gray.margin-top-sm
+                    .orderForm__complete
+                        h2.orderForm__complete__title Благодарим за заполнение анкет   
+                        p.orderForm__complete__text В ближайшее время с вами свяжется наш менеджер для обсуждения деталей и подтверждения заявки. Последующие этапы оформления заявки станут доступны после подтверждения заявки менеджером. Пожалуйста, ожидайте звонка.   
+                        button.orderForm__complete__btn.btn.btn--square.btn--big(type="submit") Отправить анкету  
+                .content__wrapper.bg-gray.margin-top-sm.padding-sides-lg
+                    h2 Предоплата программы 
+                    include ../includes/prepayment
+
+                .content__wrapper.bg-gray.margin-top-sm.padding-sides-lg
+                    h2 Загрузка документов
+                    include ../includes/docs_load
+                .content__wrapper.bg-gray.margin-top-sm.padding-sides-lg
+                    h2 Мои документы
+                    include ../includes/my_docs
+                .content__wrapper.bg-gray.margin-top-sm.padding-sides-lg
+                    h2 Соискатели
+                    .applicants
+                        table
+                            tr
+                                th Имя по паспорту
+                                th Дата рождения
+                                th Паспорт
+                                th Действителен до
+                                th Гражданство
+                            tr.applicants__man
+                                td VYASHESLAV PUSKIN
+                                td 12/12/1900
+                                td 05 03 12345
+                                td 05/03/2019
+                                td Россия
+                            tr.applicants__woman
+                                td VYASHESLAV PUSKIN
+                                td 12/12/1900
+                                td 05 03 12345
+                                td 05/03/2019
+                                td Россия
+                .content__wrapper
+                    include ../includes/flights
+
+
+
+                    
 
 
         include ../includes/side_docs

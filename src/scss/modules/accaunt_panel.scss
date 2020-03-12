@@ -1,0 +1,95 @@
+.accauntPanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0;
+    &__data {
+        display: flex;
+         &__img {
+            width: 126px;
+            height: 126px;
+        }
+
+        &__info {
+            margin-left: 31px;
+            &__name {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            &__score {
+                display: flex;
+                align-items: center;
+                &__points {
+                    margin: 0 16px 0 0;
+                    font-size: 36px
+                }
+            }
+            &__phone, &__email, &__redact {
+                display: flex;
+                align-items: center;
+                margin-top: 8px;
+            }
+            &__phone, &__email {
+                .icon {
+                    margin-right: 6px;
+                }
+                .txt {
+                    font-size: 14px;
+                    text-decoration: none;
+                    color: #000;
+                    cursor: pointer;
+                }
+                
+            }
+            &__redact {
+                .icon {
+                    margin-right: 6px;
+                }
+                .txt {
+                    text-decoration: none;
+                    font-size: 12px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        &__item {
+            margin-right: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            &:hover {
+                .accauntPanel__nav__icon__wrapper {
+                    background-color: $primary-color;
+                }
+                .accauntPanel__nav__name {
+                    color: $primary-color;
+                }
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            text-align: center;
+        }
+        &__name {
+            font-size: 18px;
+            font-weight: 500;
+            transition: color .2s ease;
+        }
+        &__icon__wrapper {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #67d6aa;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 13px;
+            transition: background-color .2s ease;
+        }
+    }
+}

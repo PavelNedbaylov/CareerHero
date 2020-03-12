@@ -17,13 +17,12 @@
   }
 
   &__hamb {
-    margin-right: 30px;
+    margin-right: 10px;
     color: #000;
-
+    line-height: 0;
     button {
       background: none;
       border: none;
-      font-size: 50px;
       outline: none;
       cursor: pointer;
     }
@@ -64,12 +63,12 @@
       .icon {
         line-height: 1;
         vertical-align: middle;
+        color: #67d6aa;
       }
     }
   }
-
   &__cart {
-    color: #fff;
+    color: #67d6aa;
 
     span {
       background: $primary-color;

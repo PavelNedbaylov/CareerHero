@@ -1,0 +1,12 @@
+.includes{
+    display: flex;
+    .icon {
+        margin-right: 17px;
+    } 
+    &__text {
+        margin: 0;
+        .txt--blue, .txt--purple {
+            font-weight: bold;
+        }
+    }
+}

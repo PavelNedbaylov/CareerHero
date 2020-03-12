@@ -109,35 +109,11 @@
         }
     }
 
-    &__nav {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        &-delete {
+    .buttonAddRemove {
+        &-delete-orederForm {
             position: absolute;
             right: 13px;
             top: 5px;
-        }
-        &-add {
-            justify-content: flex-end;
-            margin-top: 23px;
-            margin-right: 7px;
-        }
-        &__icon {
-            width: 35px;
-            height: 35px;
-            margin-right: 10px;
-            &-delete {
-                background-image: url('../../img/delete-form.png');
-            }
-            &-add {
-                background-image: url('../../img/add-form.png');
-            }
-        }
-        &__text {
-            margin: 0;
-            font-size: 14px;
-            font-weight: 500;
         }
     }
     &__submit {
@@ -149,5 +125,20 @@
         &.margin-bottom {
             margin-bottom: 57px;
         }
+    }
+    &__complete {
+        padding: 0 48px 17px 48px; 
+        text-align: center;
+    }
+    &__complete__title {
+        color: #67d6aa;
+    }
+    &__complete__text {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    &__complete__btn {
+        width: auto;
+        padding: 0 33px;
     }
 }
