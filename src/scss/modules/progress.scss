@@ -1,6 +1,7 @@
 .progress {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 25px 0;
 
     &__step {
@@ -40,6 +41,57 @@
                 border-color: #67d6aa;
             }
         }
+
+        @include media-breakpoint-only(xl) {
+            &:nth-child(6) {
+                &::after {
+                    display: none;
+                }
+            }
+            &:nth-child(7),&:nth-child(8) {
+                margin-top: 30px;
+            }
+        }
+        @include media-breakpoint-only(md) {
+            width: 96px;
+            &::after {
+                width: 40px;
+                right: -30px;
+            }
+            &:nth-child(3) {
+                &::after {
+                    display: none;
+                }
+            }
+            &:nth-child(5) {
+                &::after {
+                    display: block;
+                }
+            }
+            &:nth-child(5),&:nth-child(6),&:nth-child(7),&:nth-child(8) {
+                margin-top: 30px;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            .progress__icon {
+                margin-right: 20px;
+            }
+            .progress__text {
+                text-align: left;
+                margin-top: 0;
+            }
+            &::after {
+                display: inline-block;
+                left: 52px;
+                bottom: -50px;
+                width: 18px;
+                transform: rotate(90deg);
+            }
+        }
     }
 
     &__icon {
@@ -53,6 +105,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: 50%;
+        flex-shrink: 0;
     }
 
     &__text {
@@ -61,5 +114,15 @@
         font-weight: 500;
         color: #303030;
         margin-top: 14px;
+    }
+}
+
+@include media-breakpoint-only(md) {
+    .flex-break {
+        display: block;
+    }
+    .content__wrapper.padding-sides-lg {
+        padding-right: 30px;
+        padding-left: 30px;
     }
 }

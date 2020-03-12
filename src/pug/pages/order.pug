@@ -6,7 +6,7 @@ block variables
 
 block middle
     .row
-        .content.col-lg-8.col-xl-8
+        .content.col-lg-12.col-xl-8
             .content__body
                 .content__wrapper.bg-gray.border-bt-orange.open-bt
                     .item 
@@ -47,7 +47,7 @@ block middle
                         p Посещаю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...аю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки.
                         p Посещаю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...аю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...
                 .content__wrapper.bg-gray.margin-top-md.padding-sides-lg
-                    h2 Заполнение анкеты
+                    h2.sm-center Заполнение анкеты
                     include ../includes/progress
 
                 .content__wrapper.bg-gray.margin-top-sm.padding-sides-lg
@@ -60,25 +60,25 @@ block middle
                         p.includes__text Медицинская туристическая страховка на все время поездки #[span.txt--green включена]
 
                 .content__wrapper.bg-gray.margin-top-sm.padding-sides-lg
-                    h2 Данные покупателя
+                    h2.md-center Данные покупателя
                     .purchaserData
-                        .purchaserData__items
-                            .purchaserData__item
+                        .purchaserData__items.row
+                            .purchaserData__item.col-lg-3.col-md-6.col-sm-6
                                 p.purchaserData__item__name Имя
                                 p.purchaserData__item__data Вячеслав
-                            .purchaserData__item
+                            .purchaserData__item.col-lg-3.col-md-6.col-sm-6
                                 p.purchaserData__item__name Фамилия
                                 p.purchaserData__item__data Пушкин
-                            .purchaserData__item
+                            .purchaserData__item.col-lg-3.col-md-6.col-sm-6
                                 p.purchaserData__item__name Телефон
                                 p.purchaserData__item__data + 7 (987) 123-12-12
-                            .purchaserData__item
+                            .purchaserData__item.col-lg-3.col-md-6.col-sm-6
                                 p.purchaserData__item__name E-mail
                                 p.purchaserData__item__data mail@mail.ru
                 p.purchaserData__text Информация по данному заказу передается указанному здесь лицу
 
                 .content__wrapper.bg-gray.border-bt-orange.margin-top-sm.padding-sides-lg
-                    h2 Пожалуйста, заполните анкету для продолжения оформления заявки
+                    h2.sm-center Пожалуйста, заполните анкету для продолжения оформления заявки
                     include ../includes/order_form 
                 .buttonAddRemove.buttonAddRemove-add
                     i.buttonAddRemove__icon.buttonAddRemove__icon-add
@@ -87,25 +87,25 @@ block middle
                 .orderForm__wrapper__submit.margin-bottom
                     button.orderForm__submit.btn.btn--square.btn--big(type="submit") Отправить анкету
                 .content__wrapper.bg-gray.padding-sides-lg
-                    h2 Комментарии менеджера
+                    h2.sm-center Комментарии менеджера
                     include ../includes/manager_comments
                 .content__wrapper.bg-gray.margin-top-sm
                     .orderForm__complete
                         h2.orderForm__complete__title Благодарим за заполнение анкет   
                         p.orderForm__complete__text В ближайшее время с вами свяжется наш менеджер для обсуждения деталей и подтверждения заявки. Последующие этапы оформления заявки станут доступны после подтверждения заявки менеджером. Пожалуйста, ожидайте звонка.   
-                        button.orderForm__complete__btn.btn.btn--square.btn--big(type="submit") Отправить анкету  
+                        button.orderForm__complete__btn.btn.btn--square.btn--big(type="submit") Изменить данные в анкете 
                 .content__wrapper.bg-gray.margin-top-sm.padding-sides-lg
-                    h2 Предоплата программы 
+                    h2.sm-center Предоплата программы 
                     include ../includes/prepayment
 
                 .content__wrapper.bg-gray.margin-top-sm.padding-sides-lg
-                    h2 Загрузка документов
+                    h2.sm-center Загрузка документов
                     include ../includes/docs_load
                 .content__wrapper.bg-gray.margin-top-sm.padding-sides-lg
-                    h2 Мои документы
+                    h2.sm-center Мои документы
                     include ../includes/my_docs
                 .content__wrapper.bg-gray.margin-top-sm.padding-sides-lg
-                    h2 Соискатели
+                    h2.sm-center Соискатели
                     .applicants
                         table
                             tr

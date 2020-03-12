@@ -3,10 +3,17 @@
     &__item {
         display: flex;
         margin-bottom: 18px;
+        @include media-breakpoint-down(sm) {
+            display: block;
+        }
         &__left {
             flex-shrink: 0;
             margin-right: 31px;
             margin-top: -4px;
+            @include media-breakpoint-down(sm) {
+                margin-left: -20px;
+                margin-bottom: 20px;
+            }
         }
         &__data {
             color: #b2b2b2;
@@ -16,6 +23,9 @@
             margin: 0;
             text-align: right;
             color: black;
+            @include media-breakpoint-down(sm) {
+                text-align: left;
+            }
         }
         &__text {
             position: relative;
@@ -33,6 +43,9 @@
                 width: 30px;
                 height: 32px;
                 background-image: url('../../img/triangle.png');                
+            }
+            @include media-breakpoint-down(sm) {
+                width: 100%;
             }
         }
     }

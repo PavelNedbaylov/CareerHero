@@ -136,7 +136,9 @@
     @include media-breakpoint-only(lg) {
   
       &__img {
-        width: 180px;
+        &--lg-small {
+          width: 180px;
+        }
       }
   
       &__footer {
@@ -162,7 +164,7 @@
     }
   
     @include media-breakpoint-down(sm) {
-  
+      
       &__footer {
         flex-wrap: wrap;
       }

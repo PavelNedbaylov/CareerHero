@@ -3,15 +3,23 @@
     justify-content: space-between;
     align-items: center;
     padding: 22px 0;
+    @include media-breakpoint-down(md) {
+        display: block;
+    }
     &__data {
         display: flex;
+        flex-wrap: wrap;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 40px;
+        }
          &__img {
             width: 126px;
             height: 126px;
+            margin-bottom: 20px;
+            margin-right: 31px;
         }
 
         &__info {
-            margin-left: 31px;
             &__name {
                 font-size: 20px;
                 font-weight: bold;
@@ -56,12 +64,21 @@
 
     &__nav {
         display: flex;
+        @include media-breakpoint-only(md) {
+            justify-content: space-around;
+        }
+        @media (max-width: 510px) {
+            display: block;
+        }
         &__item {
             margin-right: 70px;
             display: flex;
             flex-direction: column;
             align-items: center;
             cursor: pointer;
+            @media (max-width: 510px)  {
+                margin: 20px 0 0 0;
+            }
             &:hover {
                 .accauntPanel__nav__icon__wrapper {
                     background-color: $primary-color;

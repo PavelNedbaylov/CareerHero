@@ -3,10 +3,28 @@
     justify-content: space-between;
     margin-bottom: 10px;
     align-items: center;
+    @include media-breakpoint-down(md){
+        display: block;
+        text-align: center;
+    }
     &__info {
         display: flex;
+        text-align: left;
+        @include media-breakpoint-only(md){
+            justify-content: space-between;
+        }
+        @include media-breakpoint-down(sm){
+            display: block;
+            text-align: center;
+        }
         &__item {
             margin-right: 46px;
+            @include media-breakpoint-down(md){
+                margin-right: 0;
+            }
+            @include media-breakpoint-down(sm){
+                margin-bottom: 10px;
+            }
             &::last-child{
                 margin-right: 0;
             }
@@ -19,6 +37,9 @@
                 font-size: 18px;
                 font-weight: bold;
                 margin-top: 16px;
+                @include media-breakpoint-down(sm){
+                    margin-top: 0;
+                }
                 &--price{
                     color: #000;
                 }
@@ -35,5 +56,11 @@
         width: auto;
         height: auto;
         padding: 10px 73px;
+        @include media-breakpoint-only(md){
+            margin-top: 32px;
+        }
+        @include media-breakpoint-down(sm){
+            margin-top: 15px;
+        }
     }
 }

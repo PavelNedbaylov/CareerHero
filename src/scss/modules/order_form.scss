@@ -1,5 +1,5 @@
 .orderForm {
-    padding-right: 171px;
+    padding-right: 20%;
     position: relative;
 
     &__block {
@@ -14,18 +14,35 @@
         }
     }
 
+    @include media-breakpoint-only(xl) {
+        padding-right: 50px;
+    }
+    @include media-breakpoint-only(md) {
+        padding-right: 30px;
+    }
+    @include media-breakpoint-down(sm) {
+        padding-right: 0;
+    }
+
     &__label {
         position: relative;
         display: inline-flex;
         align-items: center;
         justify-content: flex-end;
         width: 100%;
+        @include media-breakpoint-down(sm) {
+            display: block;
+        }
     }
 
     &__text {
         margin: 0 27px 0 0;
         text-align: right;
-
+        @include media-breakpoint-down(sm) {
+            text-align: center;
+            margin-right: 0;
+            margin-bottom: 6px;
+        }
         span {
             font-size: 12px;
         }
@@ -48,7 +65,9 @@
         outline: none;
         transition: border .2s ease-in-out;
         flex-shrink: 0;
-
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
         &:focus {
             border-color: #ef4900;
         }
@@ -67,15 +86,30 @@
 
         &-inner {
             width: 284px;
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
         }
     }
 
     &__info {
         position: relative;
         margin-top: 7px;
-        margin-left: 227px;
+        margin-left: 234px;
         font-size: 12px;
-
+        @include media-breakpoint-only(xl){
+            margin-left: 169px;
+        }
+        @include media-breakpoint-only(lg){
+            margin-left: 245px;
+        }
+        @include media-breakpoint-only(md){
+            margin-left: 160px;
+        }
+        @include media-breakpoint-down(sm){
+            margin-left: 0;
+            margin-bottom: 25px;
+        }
         &__hint {
             margin: 0;
             color: $neutral-hint;
@@ -95,14 +129,33 @@
         flex-wrap: wrap;
         justify-content: space-between;
         width: 440px;
-
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+        &>.orderForm__input{
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 10px;
+            }
+        }
         .orderForm__input {
             width: 210px;
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
         }
 
         &-inner {
             width: 284px;
-
+            flex-wrap: initial;
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+                justify-content: center;
+            }
+            .form-group--date {
+                @include media-breakpoint-down(sm) {
+                    margin-right: 11px;
+                }
+            }
             .orderForm__input {
                 width: 126px;
             }
@@ -110,10 +163,40 @@
     }
 
     .buttonAddRemove {
-        &-delete-orederForm {
+        @include media-breakpoint-down(sm) {
+            text-align: center;
+        }
+        &-delete-orderForm {
             position: absolute;
             right: 13px;
             top: 5px;
+            @include media-breakpoint-only(xl) {
+                right: -20px;
+            }
+            @include media-breakpoint-only(md) {
+                right: -28px;
+            }
+            @include media-breakpoint-down(sm) {
+                position: relative;
+                right: 0;
+                width: 100%;
+            }
+        }
+        &__icon {
+            @include media-breakpoint-down(sm) {
+                margin: 0 auto 28px;
+            }
+        }
+        &__text {
+            @include media-breakpoint-only(xl) {
+                display: none;
+            }
+            @include media-breakpoint-only(lg) {
+                display: blcok;
+            }
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
         }
     }
     &__submit {
@@ -129,6 +212,9 @@
     &__complete {
         padding: 0 48px 17px 48px; 
         text-align: center;
+        @include media-breakpoint-down(md){
+            padding: 0;
+        }
     }
     &__complete__title {
         color: #67d6aa;

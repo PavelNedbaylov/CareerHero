@@ -1,0 +1,13 @@
+@include media-breakpoint-down(sm) {
+    .sm-center {
+        text-align: center;
+    }
+}
+@include media-breakpoint-down(xs) {
+    .content__wrapper {
+        &.padding-sides-lg {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+}

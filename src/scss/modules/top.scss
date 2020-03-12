@@ -100,7 +100,6 @@
 
     &__logo {
       margin-right: 20px;
-      max-width: 150px;
     }
 
     &__hamb {
@@ -134,6 +133,11 @@
     }
   }
 
+  @include media-breakpoint-down(xl) {
+    &__logo {
+      max-width: 150px;
+    }
+  }
   @include media-breakpoint-down(xs) {
 
     &__row {

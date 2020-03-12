@@ -1,6 +1,8 @@
 .applicants {
+    overflow: hidden;
+    overflow-x: scroll;
     table {
-        width: 100%;
+        width: 825px;
         margin-left: 13px;
         tr{
             text-align: left;
