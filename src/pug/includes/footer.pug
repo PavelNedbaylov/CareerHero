@@ -119,3 +119,25 @@ footer.footer
             li Вкусно готовить
             li Делать все за других
             li Спать до обеда, желательно до вечера
+
+    #certificate-popup-form.b-popup.pForm
+      form.pForm__body.fw.webform(method="post" action="")
+        .pForm__header
+          span.pForm__title Оставьте заявку на получение сертификата
+          p.pForm__subtitle С вами свяжеться наш менеджер
+
+        .form-group
+          label.form-input-label 
+              span.form-input-label-txt Ваше имя
+              input.form-control(type="text" name="name")
+        .form-group
+          label.form-input-label 
+              span.form-input-label-txt E-mail
+              input.form-control(type="mail" name="mail")
+        .form-group
+          label.form-input-label 
+              span.form-input-label-txt Телефон
+              input.form-control(type="tel" name="phone")
+
+        .form-group
+          button.btn.btn--square.btn--big(type="submit") Отправить

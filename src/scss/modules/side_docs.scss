@@ -6,14 +6,11 @@
             background-color: #f6f7f7;
         }
     }
-    &__img {
-        &__printer {
-            width: 56px;
-            height: 52px;
-        }
-        &__wrap {
-            text-align: center;
-        }
+    .icon-printer {
+        display: block;
+        text-align: center;
+        font-size: 52px;
+        color: $primary-color;
     }
     &__title {
         display: block;

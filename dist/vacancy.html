@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Поиск</title>
+    <meta name="description" content="Поиск подходящих школ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/vendors.4bef77e2156bef6a36c9.css" rel="stylesheet"><link href="css/app.4bef77e2156bef6a36c9.css" rel="stylesheet"></head>
+  <body>
+    <div class="st-container" id="st-container">
+      <div class="st-menu sidebar st-effect-1 sidebar notds" id="menu-1">
+        <div class="sidebar__top">
+          <div class="sidebar__close"><i class="icon icon-arrow-left"></i></div><a class="sidebar__logo" src="#"><img srcset="img/logo.png 1x, img/logo@2x.png 1.5x, img/logo@2x.png 2x" src="img/logo.png" alt="Learning Guru"></a>
+        </div>
+        <ul class="sidebar__list">
+          <li><a href="/">ГЛАВНАЯ</a></li>
+        </ul>
+        <hr>
+        <ul class="sidebar__list">
+          <li><strong>Обучение</strong></li>
+          <li><a href="#">Онлайн обучение</a></li>
+          <li><a href="#">Оффлайн обучение</a></li>
+          <li><a href="#">Обучение за рубежом</a></li>
+        </ul>
+        <hr>
+        <ul class="sidebar__list">
+          <li><strong>О Lingua Guru</strong></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Карьера в Lingua Guru</a></li>
+          <li><a href="#">Реквизиты</a></li>
+        </ul>
+        <hr>
+        <ul class="sidebar__list">
+          <li><strong><a href="#">Онлайн-платформа</a></strong></li>
+          <li><strong><a href="#">Контакты</a></strong></li>
+        </ul>
+      </div>
+      <div class="st-pusher">
+        <header class="top">
+          <div class="container">
+            <div class="top__row row justify-content-between align-items-center">
+              <div class="top__left col col-sm d-flex align-items-center"><a class="top__logo" src="/"><img srcset="img/logo.png 1x, img/logo@2x.png 1.5x, img/logo@2x.png 2x" src="img/logo.png" alt="Learning Guru"></a>
+                <div class="top__nav">
+                  <div class="top__hamb" id="st-trigger-effects">
+                    <button data-effect="st-effect-1"><i class="icon icon__menu"></i><i class="icon icon-menu"></i></button>
+                  </div>
+                  <ul class="nav">
+                    <li><a href="learning.html">Обучение</a></li>
+                    <li><a href="about.html">О Lingua Guru</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="top__right col-auto col-sm-auto">
+                <div class="top__phone"><a class="phone" href="tel: 88129200914">8 (812) 9200-914</a>
+                  <div><a class="btn btn--round fbox ttu" href="#callback-popup-form" data-fancybox>Заказать звонок</a></div>
+                </div>
+                <div class="top__rightbox"><a class="top__search" href="/filter.html"><i class="icon icon-search"></i></a><a class="top__user" href="/account.html"><i class="icon icon-user"></i></a><a class="top__heart" href="/step_1.html"><i class="icon icon-heart"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="container">
+          <div class="row">
+<div class="side__toggle"><i class="icon icon-filter"></i></div>
+<div class="side col-lg-4 col-xl-3">
+  <div class="side__wrap"><span class="side__title">Я хочу</span>
+    <form>
+      <div class="form-group">
+        <select class="select-style form-control">
+          <option>Учиться</option>
+          <option>Работать</option>
+          <option>Стажироваться</option>
+          <option>Не знаю</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <select class="select-style form-control">
+          <option>Пол</option>
+          <option>Мужской</option>
+          <option>Женский</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <select class="select-style form-control">
+          <option>Страна</option>
+          <option>Россия</option>
+          <option>Казахстан</option>
+        </select>
+      </div>
+      <div class="form-group form-group--hor d-flex align-items-center"><span class="form-hcap">Возраст:</span>
+        <div style="max-width: 60px;">
+          <input class="form-control" type="text" placeholder="лет">
+        </div>
+      </div>
+      <div class="form-group">
+        <select class="select-style form-control">
+          <option>Язык</option>
+          <option>Английский</option>
+          <option>Французский</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <select class="select-style form-control">
+          <option>Образование</option>
+          <option>Высшее</option>
+          <option>Средне-специальное</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Как вы давно закончили обучение</label>
+        <div class="radio-style">
+          <input type="radio" name="radio" value="1" id="radio_1">
+          <label for="radio_1"><span>Менее трёх лет назад</span></label>
+        </div>
+        <div class="radio-style">
+          <input type="radio" name="radio" value="2" id="radio_2">
+          <label for="radio_2"><span>Более трёх лет назад</span></label>
+        </div>
+      </div>
+      <div class="form-group">
+        <select class="select-style form-control">
+          <option>Сфера</option>
+          <option>Программирование</option>
+          <option>Языки</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <select class="select-style form-control">
+          <option>Опыт работы</option>
+          <option>Менее 5 лет</option>
+          <option>Более 5 лет</option>
+        </select>
+      </div>
+      <div class="form-group form-group--date">
+        <input class="form-control datepicker" type="text" placeholder="Дата"><i class="icon icon-calendar"></i>
+      </div>
+      <div class="form-group">
+        <select class="select-style form-control">
+          <option>Продолжительность</option>
+          <option>3 месяца</option>
+          <option>1 год</option>
+        </select>
+      </div>
+      <button class="side__submit btn btn--square btn--big" type="submit">Показать</button>
+    </form>
+  </div>
+  <div class="side__images"><a class="side__img" href="#" target="_blank"><img src="img/side-image1.jpg"></a><a class="side__img" href="#" target="_blank"><img src="img/side-image2.jpg"></a></div>
+</div>
+            <div class="content col-lg-8 col-xl-9">
+              <div class="crumbs notds">
+                <ul class="breadcrumb">
+                  <li><a href="#">Главная</a></li>&nbsp;/&nbsp;
+                  <li><a href="#">Вакансии</a></li>&nbsp;/&nbsp;
+                  <li class="active">Название вакансии</li>
+                </ul>
+              </div>
+              <p class="content__title">Название вакансии</p>
+              <div class="content__body">
+                <div class="textstyle">
+                  <div class="row">
+                    <div class="vacancy__left col-lg-6">
+                      <div class="mainItemInfo graybox d-none d-lg-block">
+                        <p class="color"><strong>Актуальность: 11.02.2020 - 12.03.2020</strong></p>
+                        <p>Зарплата: <strong>123 000$/год</strong></p>
+                        <p>Стоимость программы: <strong>1 200$</strong></p>
+                      </div>
+                      <h2>Описание вакансии</h2>
+                      <p>Посещаю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...аю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...</p>
+                      <h2>Требование от кандидата</h2>
+                      <p>Посещаю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...аю школу почти что год. Хорошо подобраны учебные пособия</p>
+                    </div>
+                    <div class="vacancy__right col-lg-6">
+                      <div class="graybox d-lg-none">
+                        <p class="color"><strong>Актуальность: 11.02.2020 - 12.03.2020</strong></p>
+                        <p>Зарплата: <strong>123 000$/год</strong></p>
+                        <p>Стоимость программы: <strong>1 200$</strong></p>
+                      </div>
+                      <div class="slider-style owl-carousel"><a class="fbox" href="#"><img src="img/slides/vacancy1.jpg"></a><a class="fbox" href="#"><img src="img/slides/vacancy1.jpg"></a><a class="fbox" href="#"><img src="img/slides/vacancy1.jpg"></a></div>
+                      <div class="horbtns"><a class="btn btn--round btn--transparent" href="#getwork-popup-form" data-fancybox>Как получить работу</a><a class="btn btn--round" href="#help-popup-form" data-fancybox>Помощь в оформлении</a></div>
+                      <div class="item__tags">
+                        <div class="item__tag bg-gray blue"><i class="icon icon-airplane"></i><span>Перелет включен</span></div>
+                        <div class="item__tag bg-gray green"><i class="icon icon-bed"></i><span>Проживание включено</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <h2>Дополнительно</h2>
+                  <p>Посещаю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...аю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки.</p>
+                  <p>Посещаю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...аю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...</p>
+                </div>
+              </div>
+              <div class="faq">
+                <h2 class="faq__title">FAQ</h2>
+                <div class="faq__wrap i-acc-parent">
+                  <div class="faq__item">
+                    <div class="faq__question i-acc-link">1. Как быстро узнать результат подхожу ли я к данной вакансии?<i class="icon icon-arrow-down"></i></div>
+                    <div class="faq__reply i-acc-hide">Посещаю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...аю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки.</div>
+                  </div>
+                  <div class="faq__item">
+                    <div class="faq__question i-acc-link">2. Как получить визу в Германию?
+<i class="icon icon-arrow-down"></i></div>
+                    <div class="faq__reply i-acc-hide">Посещаю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...аю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки.</div>
+                  </div>
+                  <div class="faq__item">
+                    <div class="faq__question i-acc-link">3. Сколь стоят ваши услуги оформления?
+<i class="icon icon-arrow-down"></i></div>
+                    <div class="faq__reply i-acc-hide">Посещаю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...аю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__row row">
+      <div class="col-md-3 col-lg-2"><span class="footer__title"><a href="#">Обучение</a></span>
+        <ul class="footer__list">
+          <li><a href="#">Онлайн обучение</a></li>
+          <li><a href="#">Оффлайн обучение</a></li>
+          <li><a href="#">Обучение за рубежом</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-lg-2 col-xxl-3"><span class="footer__title"><a href="#">Онлайн-платформа</a></span></div>
+      <div class="col-md-3 col-lg-2"><span class="footer__title"><a href="#">О Lingua Guru</a></span>
+        <ul class="footer__list">
+          <li><a href="#">О Lingua Guru</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Карьера в Lingua Guru</a></li>
+          <li><a href="#">Реквизиты</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-lg-2"><span class="footer__title"><a href="#">Реквизиты</a></span><span class="footer__title"><a href="#">Контакты</a></span></div>
+      <div class="footer__contacts col-lg-4 col-xxl-3">
+        <div class="footer__contact"><i class="icon icon-phone"></i><a href="tel:88129200914">8 (812) 9200-914</a><strong>Заказать звонок</strong></div>
+        <div class="footer__contact"><i class="icon icon-mail"></i><a href="mailto:info@lingua-guru.ru">info@lingua-guru.ru</a></div>
+        <div class="footer__contact"><i class="icon icon-location"></i><span>Санкт-Петербург, пр. Королёва 7</span></div>
+      </div>
+    </div>
+    <div class="footer__social">
+      <ul class="socbtns">
+        <li class="vk"><a href="https://vk.com/lingua_guru" target="_blank" rel="nofollow" title="Вконтакте"><i class="icon icon-vk"></i></a></li>
+        <li class="facebook"><a href="https://ru-ru.facebook.com/linguaguruspb/" target="_blank" rel="nofollow" title="Facebook"><i class="icon icon-facebook"></i></a></li>
+        <li class="instagram"><a href="https://www.instagram.com/linguaguru/" target="_blank" rel="nofollow" title="Instagram"><i class="icon icon-instagram"></i></a></li>
+        <li class="telegram"><a href="https://www.telegram.org/linguaguru" target="_blank" rel="nofollow" title="Telegram"><i class="icon icon-telegram"></i></a></li>
+        <li class="ytb"><a href="https://www.youtube.com/channel/UC4BaLPDn1kqYYO9ir6l5LBw" target="_blank" rel="nofollow" title="YouTube"><i class="icon icon-youtube"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer__bottom row justify-content-between">
+      <div class="col-md-6">
+        <p>© 2019 Все права защищены.</p>
+      </div>
+      <div class="col-md-auto"><a href="#">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a></div>
+    </div>
+  </div>
+  <div class="hide">
+    <div class="b-popup pForm" id="callback-popup-form">
+      <form class="pForm__body fw webform" method="post" action="">
+        <div class="pForm__header"><span class="pForm__title">Заказать звонок</span>
+          <p class="pForm__subtitle">Посещаю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...</p>
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="Имя">
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="tel" placeholder="Телефон">
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="mail" placeholder="E-mail">
+        </div>
+        <div class="form-group">
+          <label class="form-agree-label">
+            <input type="checkbox" name="form-agree-checkbox" value="on">Я согласен с правилами сервиса и даю согласие на обработку моих персональных данных
+          </label>
+        </div>
+        <div class="form-group">
+          <button class="btn btn--round" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+    <div class="b-popup pForm" id="help-popup-form">
+      <form class="pForm__body fw webform" method="post" action="">
+        <div class="pForm__header"><span class="pForm__title">Помощь в оформлении</span>
+          <p class="pForm__subtitle">Посещаю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...</p>
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="Имя">
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="tel" placeholder="Телефон">
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="mail" placeholder="E-mail">
+        </div>
+        <div class="form-group">
+          <label class="form-agree-label">
+            <input type="checkbox" name="form-agree-checkbox" value="on">Я согласен с правилами сервиса и даю согласие на обработку моих персональных данных
+          </label>
+        </div>
+        <div class="form-group">
+          <button class="btn btn--round" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+    <div class="b-popup pForm" id="getwork-popup-form">
+      <form class="pForm__body fw webform" method="post" action="">
+        <div class="pForm__header"><span class="pForm__title">Как получить работу?</span>
+          <p class="pForm__subtitle">Посещаю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...</p>
+        </div>
+        <div class="pForm__text">
+          <ul>
+            <li>Владение английским языком</li>
+            <li>Вкусно готовить</li>
+            <li>Делать все за других</li>
+            <li>Спать до обеда, желательно до вечера</li>
+          </ul>
+        </div>
+      </form>
+    </div>
+    <div class="b-popup pForm" id="certificate-popup-form">
+      <form class="pForm__body fw webform" method="post" action="">
+        <div class="pForm__header"><span class="pForm__title">Оставьте заявку на получение сертификата</span>
+          <p class="pForm__subtitle">С вами свяжеться наш менеджер</p>
+        </div>
+        <div class="form-group">
+          <label class="form-input-label"> <span class="form-input-label-txt">Ваше имя</span>
+            <input class="form-control" type="text" name="name">
+          </label>
+        </div>
+        <div class="form-group">
+          <label class="form-input-label"> <span class="form-input-label-txt">E-mail</span>
+            <input class="form-control" type="mail" name="mail">
+          </label>
+        </div>
+        <div class="form-group">
+          <label class="form-input-label"> <span class="form-input-label-txt">Телефон</span>
+            <input class="form-control" type="tel" name="phone">
+          </label>
+        </div>
+        <div class="form-group">
+          <button class="btn btn--square btn--big" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</footer>
+      </div>
+    </div>
+  <script type="text/javascript" src="js/vendors.4bef77e2156bef6a36c9.js"></script><script type="text/javascript" src="js/app.4bef77e2156bef6a36c9.js"></script></body>
+</html>

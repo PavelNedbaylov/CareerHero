@@ -467,6 +467,10 @@ a {
             }
         }
 
+        &-wrapper {
+            margin-top: 34px;
+        }
+
         ::-webkit-input-placeholder {
             color: #000;
         }
@@ -582,83 +586,9 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
     flex-shrink: 0;
-    &__require {
-        width: 24px;
-        height: 24px;
-        background-image: url(../../img/require.svg);
-    }
-
-    &__success {
-        width: 20px;
-        height: 20px;
-        background-image: url(../../img/success.svg);
-    }
-
-    &__bin {
-        width: 24px;
-        height: 24px;
-        background-image: url(../../img/bin.svg);
-        cursor: pointer;
-    }
-
-    &__taxi {
-        width: 21px;
-        height: 21px;
-        background-image: url(../../img/taxi.svg);
-    }
-
-    &__medical {
-        width: 21px;
-        height: 21px;
-        background-image: url(../../img/medical.svg);
-    }
-
-    &__menu {
-        width: 25px;
-        height: 25px;
-        background-image: url(../../img/menu.svg);
-    }
-
-    &__heart {
-        width: 25px;
-        height: 25px;
-        background-image: url(../../img/heart.svg);
-    }
-
-    &__heart__white {
-        width: 25px;
-        height: 25px;
-        background-image: url(../../img/heart_white.svg);
-    }
-
-    &__phone {
-        width: 15px;
-        height: 15px;
-        background-image: url(../../img/phone.svg);
-    }
-
-    &__email {
-        width: 19px;
-        height: 15px;
-        background-image: url(../../img/email.svg);
-    }
-
-    &__redact {
-        width: 16px;
-        height: 16px;
-        background-image: url(../../img/redact.svg);
-    }
-
-    &__plane {
-        width: 28px;
-        height: 29px;
-        background-image: url(../../img/plane.svg);
-    }
-
-    &__mark {
-        width: 26px;
-        height: 28px;
-        background-image: url(../../img/mark.svg);
+    &-menu {
+        font-size: 26px;
+        color: $primary-color;
     }
 }
 
@@ -666,11 +596,15 @@ a {
     display: flex;
     align-items: center;
     cursor: pointer;
-
-    &-add {
+    &-order {
         justify-content: flex-end;
-        margin-top: 23px;
         margin-right: 7px;
+        margin-top: 19px;
+        .icon {
+            font-size: 35px;
+            color: $primary-color;
+            margin-right: 10px;
+        }
     }
 
     &__icon {
@@ -681,10 +615,6 @@ a {
 
         &-delete {
             background-image: url('../../img/delete-form.png');
-        }
-
-        &-add {
-            background-image: url('../../img/add-form.png');
         }
     }
 
@@ -917,12 +847,12 @@ a {
     transform: translateY(-20px) perspective(600px) rotateX(10deg);
 
     .fancybox-close-small {
-        right: 0;
-        top: -39px;
+        right: 14px;
+        top: 14px;
         padding: 0;
         width: 25px;
         height: 25px;
-        color: #ddd;
+        color: $primary-color;
         font-size: 24px;
     }
 }
@@ -943,6 +873,7 @@ a {
     color: #000;
     margin-top: 45px;
     overflow: visible;
+    border-radius: 20px;
 
     &__body {
         background: #fff;
@@ -960,6 +891,7 @@ a {
         font-weight: 700;
         display: block;
         color: #000;
+        text-align: center;
     }
 
     &__subtitle {
@@ -998,11 +930,49 @@ a {
             }
         }
     }
+    &__img {
+        border-radius: 50%;
+        background-size: contain;
+        width: 126px;
+        height: 126px;
+        display: inline-block;
+        &__wrapper {
+            text-align: center;
+            position: relative;
+            margin-bottom: 30px;
+        }
+        &__add {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: -10px;
+            border: 5px solid #fff;
+            border-radius: 50%;
+            display: inline-block;
+            width: 34px;
+            height: 34px;
+            background-size: contain;
+            background-color: #fff;
+            background-image: url('../../img/add-ac-photo.svg');
+            cursor: pointer;
+        }
+    } 
 
     label {
         display: none;
         font-size: 14px;
         margin: 0 0 5px 0;
+        &.form-input-label {
+            display: block;
+            margin-top: 12px;
+            .form-input-label-txt {
+                display: inline-block;
+                margin-bottom: 5px;
+                font-size: 16px;
+                color: #aeaeae;
+            } 
+        }
     }
 
     ::-webkit-input-placeholder {

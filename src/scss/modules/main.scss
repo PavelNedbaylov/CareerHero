@@ -3,8 +3,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  //@include imgRetina('../../img/bg/main', 'jpg');
-  background-image: url('../../img/bg/main.jpg');
+  @include imgRetina('../../img/bg/main', 'jpg');
+  // background-image: url('../../img/bg/main.jpg');
 
   &__wrap {
     height: 760px;

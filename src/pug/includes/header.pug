@@ -8,13 +8,14 @@ header.top
     .container
         .top__row.row.justify-content-between.align-items-center
             .top__left.col.col-sm.d-flex.align-items-center
-                a.top__logo(src="#")
+                a.top__logo(src="/")
                     +img('img/logo','png', 'Learning Guru')
 
                 .top__nav
                     #st-trigger-effects.top__hamb
                         button(data-effect="st-effect-1")
                             i.icon.icon__menu
+                            i.icon.icon-menu
                     ul.nav
                         each navItem in nav
                             li
@@ -25,9 +26,9 @@ header.top
                     div
                         a.btn.btn--round.fbox.ttu(href="#callback-popup-form", data-fancybox) Заказать звонок
                 .top__rightbox
-                    a.top__search(href="#")
+                    a.top__search(href="/filter.html")
                         i.icon.icon-search
-                    a.top__user(href="#")
+                    a.top__user(href="/account.html")
                         i.icon.icon-user
-                    a.top__heart(href="#")
-                        i.icon.icon__heart
+                    a.top__heart(href="/step_1.html")
+                        i.icon.icon-heart

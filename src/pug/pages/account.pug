@@ -32,7 +32,7 @@ block middle
                                         span Проживание включено
                                 .item__cost
                                     span Зарплата 100 000$ в год
-                                    a.btn.btn--round(href="#") Посмотреть подробнее
+                                    a.btn.btn--round(href="/vacancy.html") Посмотреть подробнее
 
                 .item.item-bordered.item-hover-green
                     .item__wrap.row
@@ -60,7 +60,7 @@ block middle
                                         span Проживание включено
                                 .item__cost
                                     span Зарплата 100 000$ в год
-                                    a.btn.btn--round(href="#") Посмотреть подробнее
+                                    a.btn.btn--round(href="/vacancy.html") Посмотреть подробнее
 
                 .item.item-bordered.item-hover-green
                     .item__wrap.row
@@ -88,7 +88,48 @@ block middle
                                         span Проживание включено
                                 .item__cost
                                     span Зарплата 100 000$ в год
-                                    a.btn.btn--round(href="#") Посмотреть подробнее
+                                    a.btn.btn--round(href="/vacancy.html") Посмотреть подробнее
 
             a.content__more.btn.btn--big.btn--square.btn--transparent(href="#") Показать еще
+
+    .hide
+        #accountData-popup-form.b-popup.pForm
+            form.pForm__body.fw.webform(method="post" action="")
+                .pForm__header
+                span.pForm__title Профиль
+                .pForm__img__wrapper
+                    .pForm__img.pForm__img--account(style="background-image: url(img/ac_photo.jpg)")
+                    .pForm__img__add
+                .form-group
+                    label.form-input-label 
+                        span.form-input-label-txt Ваше имя
+                        input.form-control(type="text" name="name")
+
+                .form-group
+                    label.form-input-label 
+                        span.form-input-label-txt E-mail
+                        input.form-control(type="tel" name="phone")
+
+                .form-group
+                    label.form-input-label 
+                        span.form-input-label-txt Телефон
+                        input.form-control(type="mail" name="mail")
+                .form-group-wrapper
+                    .form-group
+                        label.form-input-label 
+                            span.form-input-label-txt Старый пароль
+                            input.form-control(type="text" name="old_password")
+
+                    .form-group
+                        label.form-input-label 
+                            span.form-input-label-txt Новый пароль
+                            input.form-control(type="text" name="new_password")
+
+                    .form-group
+                        label.form-input-label 
+                            span.form-input-label-txt Повторите пароль
+                            input.form-control(type="text" name="conf_password")
+
+                .form-group
+                    button.accauntPanel__submit.btn.btn--square.btn--big(type="submit") Сохранить
 

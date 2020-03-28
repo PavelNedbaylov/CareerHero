@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 22px 0;
+    z-index: -1;
     @include media-breakpoint-down(md) {
         display: block;
     }
@@ -15,8 +16,10 @@
          &__img {
             width: 126px;
             height: 126px;
+            border-radius: 50%;
             margin-bottom: 20px;
             margin-right: 31px;
+            background-size: contain;
         }
 
         &__info {
@@ -31,6 +34,9 @@
                     margin: 0 16px 0 0;
                     font-size: 36px
                 }
+            }
+            .icon {
+                color: $primary-color;
             }
             &__phone, &__email, &__redact {
                 display: flex;
@@ -76,6 +82,10 @@
             flex-direction: column;
             align-items: center;
             cursor: pointer;
+            .icon {
+                font-size: 26px;
+                color: #fff;
+            }
             @media (max-width: 510px)  {
                 margin: 20px 0 0 0;
             }
@@ -108,5 +118,8 @@
             margin-bottom: 13px;
             transition: background-color .2s ease;
         }
+    }
+    &__submit {
+        margin-top: 25px;
     }
 }

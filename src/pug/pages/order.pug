@@ -6,6 +6,9 @@ block variables
 
 block middle
     .row
+        .content.col-xl-12
+            p.content__title.content__title-tx16 ЗАКАЗ №53533 
+            p.content__title.content__title-tx30.content__title-pb10 С возвращением! 
         .content.col-lg-12.col-xl-8
             .content__body
                 .content__wrapper.bg-gray.border-bt-orange.open-bt
@@ -52,11 +55,11 @@ block middle
 
                 .content__wrapper.bg-gray.margin-top-sm.padding-sides-lg
                     .includes
-                        i.icon.icon__taxi
+                        i.icon.icon-taxi
                         p.includes__text #[span.txt--green Трансфер включен:] #[span.txt--blue 05.09 Аэропорт — Отель] и #[span.txt--purple 20.09 Отель —  Аэропорт]
                 .content__wrapper.bg-gray.margin-top-sm.padding-sides-lg
                     .includes
-                        i.icon.icon__medical 
+                        i.icon.icon-medical 
                         p.includes__text Медицинская туристическая страховка на все время поездки #[span.txt--green включена]
 
                 .content__wrapper.bg-gray.margin-top-sm.padding-sides-lg
@@ -80,8 +83,8 @@ block middle
                 .content__wrapper.bg-gray.border-bt-orange.margin-top-sm.padding-sides-lg
                     h2.sm-center Пожалуйста, заполните анкету для продолжения оформления заявки
                     include ../includes/order_form 
-                .buttonAddRemove.buttonAddRemove-add
-                    i.buttonAddRemove__icon.buttonAddRemove__icon-add
+                .buttonAddRemove.buttonAddRemove-order
+                    i.icon.icon-add
                     p.buttonAddRemove__text Добавить ещё<br/> одного человека 
                     
                 .orderForm__wrapper__submit.margin-bottom
@@ -109,18 +112,23 @@ block middle
                     .applicants
                         table
                             tr
+                                th
                                 th Имя по паспорту
                                 th Дата рождения
                                 th Паспорт
                                 th Действителен до
                                 th Гражданство
                             tr.applicants__man
+                                td
+                                    i.icon.icon-man
                                 td VYASHESLAV PUSKIN
                                 td 12/12/1900
                                 td 05 03 12345
                                 td 05/03/2019
                                 td Россия
                             tr.applicants__woman
+                                td
+                                    i.icon.icon-woman
                                 td VYASHESLAV PUSKIN
                                 td 12/12/1900
                                 td 05 03 12345

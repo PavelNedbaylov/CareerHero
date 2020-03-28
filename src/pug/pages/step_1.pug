@@ -1,0 +1,91 @@
+extends ../layout/inner
+
+block variables
+    - var title = 'Заказ';
+    - var description = 'Поиск подходящих школ';
+
+block middle
+    .row
+        .content.col-xl-12
+            p.content__title.content__title-tx16 ЗАКАЗ №53533 
+            p.content__title.content__title-tx30.content__title-pb10 С возвращением!
+        .content.col-lg-12.col-xl-8
+            .content__body
+                .content__wrapper.bg-gray.border-bt-orange.open-bt
+                    .item 
+                        .item__wrap.row
+                            .item__imgwrap.shift.col-lg-auto
+                                .item__img(style="background-image: url(img/item1.jpg)")
+
+                            .item__desc.col-lg
+                                .item__header
+                                    h2.item__title Название элемента
+                                include ../includes/stars
+                                ul.item__list
+                                    li Тип: <strong>Работа</strong>
+                                    li Страна: <strong>Япония</strong>
+                                    li Язык: <strong>Японский</strong>
+                                .item__footer
+                                    .item__tags
+                                        .item__tag.blue
+                                            i.icon.icon-airplane
+                                            span Перелет включен
+                                        .item__tag
+                                            i.icon.icon-bed
+                                            span Проживание включено
+
+                    .mainItemInfo.d-none.d-lg-block
+                        p.color: strong Актуальность: 11.02.2020 - 12.03.2020
+                        p Зарплата: #[strong 123 000$/год]
+                        p Стоимость программы: #[strong 1 200$]
+                    .textstyle
+                        h2 Описание вакансии
+                        p Посещаю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...аю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...
+
+                        h2 Требование от кандидата
+                        
+                        include ../includes/popover 
+
+                        h2 Дополнительно
+                        p Посещаю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...аю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки.
+                        p Посещаю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...аю школу почти что год. Хорошо подобраны учебные пособия - упражнения на самые разные навыки...Хорошо подобраны учебные пособия - упражнения на самые разные навыки...
+                .content__wrapper.bg-gray.margin-top-md.padding-sides-lg
+                    h2.sm-center Заполнение анкеты
+                    .progress.row
+                        .progress__step.progress__step-1.progress__step-current
+                            i.icon.icon-success
+                            p.progress__text Заполнение анкеты
+                        .progress__step.progress__step-2
+                            i.icon.icon-success
+                            p.progress__text Подтверждение заявки
+                        .progress__step.progress__step-3
+                            i.icon.icon-success
+                            p.progress__text Предоплата
+                        .flex-break
+                        .progress__step.progress__step-4
+                            i.icon.icon-success
+                            p.progress__text Сбор документов
+                        .progress__step.progress__step-5
+                            i.icon.icon-success
+                            p.progress__text Обработка документов 
+                        .progress__step.progress__step-6
+                            i.icon.icon-success
+                            p.progress__text Оплата
+                        .progress__step.progress__step-7
+                            i.icon.icon-success
+                            p.progress__text Поездка оформлена
+
+                .content__wrapper.bg-gray.border-bt-orange.margin-top-sm.padding-sides-lg
+                    h2.sm-center Пожалуйста, заполните анкету для продолжения оформления заявки
+                    include ../includes/order_form 
+                .buttonAddRemove.buttonAddRemove-order
+                    i.icon.icon-add
+                    p.buttonAddRemove__text Добавить ещё<br/> одного человека 
+                    
+                .orderForm__wrapper__submit.margin-bottom
+                    button.orderForm__submit.btn.btn--square.btn--big(type="submit") Отправить анкету
+                .content__wrapper.bg-gray.padding-sides-lg
+                    h2.sm-center Комментарии менеджера
+                    include ../includes/manager_comments
+
+        include ../includes/side_docs

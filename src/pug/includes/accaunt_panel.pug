@@ -3,31 +3,31 @@
         .content.col-lg-12.col-xl-12
             .accauntPanel
                 .accauntPanel__data
-                    img.accauntPanel__data__img(src="../../img/ac_photo.png")
+                    .accauntPanel__data__img(style="background-image: url(img/ac_photo.jpg)")
                     .accauntPanel__data__info
                         .accauntPanel__data__info__name Вячеслав Сергевич
                         .accauntPanel__data__info__score
                             p.accauntPanel__data__info__score__points 1805
                             button.btn.btn--round.btn--transparent.accauntPanel__btn Получить очки
                         .accauntPanel__data__info__email 
-                            i.icon.icon__email
+                            i.icon.icon-email
                             a.txt mail@mail.ru
                         .accauntPanel__data__info__phone 
-                            i.icon.icon__phone
+                            i.icon.icon-phone
                             a.txt +7 (900) 123-45-67
                         .accauntPanel__data__info__redact 
-                            i.icon.icon__redact
-                            a.txt Редактировать профиль
+                            i.icon.icon-redact
+                            a.txt.fbox(href="#accountData-popup-form", data-fancybox) Редактировать профиль 
                 .accauntPanel__nav
                     .accauntPanel__nav__item
                         .accauntPanel__nav__icon__wrapper
-                            i.icon.icon__plane
+                            i.icon.icon-plane
                         span.accauntPanel__nav__name 8 поездок
                     .accauntPanel__nav__item
                         .accauntPanel__nav__icon__wrapper
-                            i.icon.icon__mark
+                            i.icon.icon-mark
                         span.accauntPanel__nav__name 5 стран
                     .accauntPanel__nav__item
                         .accauntPanel__nav__icon__wrapper
-                            i.icon.icon__heart__white
+                            i.icon.icon-heart
                         span.accauntPanel__nav__name 12 отложенных

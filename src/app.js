@@ -1,5 +1,7 @@
 // JS
 import './js/main.js';
+import 'popper.js'
+import 'bootstrap';
 import '@fancyapps/fancybox'
 import 'owl.carousel'
 import './js/sidebarEffect.js'
